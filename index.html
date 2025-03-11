@@ -1,0 +1,596 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>C Program In HTML</title>
+</head>
+
+<body>
+    <h1 align="center">C PROGRAMMING IN HTML</h1>
+    
+    <!-- Hello World -->
+    <div class="helloworld">
+        <h2>Hello World</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include <stdio.h>
+
+            int main() {
+                printf("Hello, World!\n");
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/image.png" alt="codeimage">
+    </div>
+    <hr>
+
+    <!-- Odd or Even -->
+    <div class="number">
+        <h2>Odd or Even</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include <stdio.h>
+
+            int main() {
+                int num;
+
+                printf("Enter a number: ");
+                scanf("%d", &num);
+
+                if (num % 2 == 0)
+                    printf("%d is even.\n", num);
+                else
+                    printf("%d is odd.\n", num);
+
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/0.png" alt="code0">
+    </div>
+    <hr>
+
+    <!-- Using strlen -->
+    <div class="strlen">
+        <h2>Using strlen</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+
+            int main() {
+                char str[] = "Hello, World!";
+                int length = strlen(str);
+                printf("Length of the string: %d\n", length);
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/1.png" alt="code1">
+    </div>
+    <hr>
+
+    <!-- Using strcpy -->
+    <div class="strcpy">
+        <h2>Using strcpy</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+
+            int main() {
+                char source[] = "Hello, World!";
+                char destination[50];
+
+                strcpy(destination, source);
+                printf("Source: %s\n", source);
+                printf("Destination: %s\n", destination);
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/2.png" alt="code2">
+    </div>
+    <hr>
+
+    <!-- Using strcat -->
+    <div class="strcat">
+        <h2>Using strcat</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+
+            int main() {
+                char str1[50] = "Hello, ";
+                char str2[] = "World!";
+
+                strcat(str1, str2);
+                printf("Concatenated string: %s\n", str1);
+
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/3.png" alt="code3">
+    </div>
+    <hr>
+
+    <!-- Using strcmp -->
+    <div class="strcmp">
+        <h2>Using strcmp</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+
+            int main() {
+                char str1[] = "Hello";
+                char str2[] = "Hello";
+
+                if (strcmp(str1, str2) == 0)
+                    printf("Strings are equal\n");
+                else
+                    printf("Strings are not equal\n");
+
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/4.png" alt="code4">
+    </div>
+    <hr>
+
+    <!-- Using strrev -->
+    <div class="strrev">
+        <h2>Using strrev</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+
+            int main() {
+                char str[] = "Hello, World!";
+                printf("Original string: %s\n", str);
+
+                strrev(str);
+                printf("Reversed string: %s\n", str);
+
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/5.png" alt="code5">
+    </div>
+    <hr>
+
+    <!-- Using strlwr -->
+    <div class="strlwr">
+        <h2>Using strlwr</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+
+            int main() {
+                char str[] = "Hello, World!";
+
+                printf("Original string: %s\n", str);
+                strlwr(str);
+                printf("Lowercase string: %s\n", str);
+
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/6.png" alt="code6">
+    </div>
+    <hr>    
+
+    <!-- Different String Functions - strupr() -->
+        <div class="strupr">
+            <h2>Using strupr</h2>
+            <h3>CODE</h3>
+            <pre>
+                #include &lt;stdio.h&gt;
+                #include &lt;string.h&gt;
+    
+                int main() {
+                    char str[] = "Hello, World!";
+    
+                    printf("Original string: %s\n", str);
+                    strupr(str);
+                    printf("Uppercase string: %s\n", str);
+    
+                    return 0;
+                }
+            </pre>
+            <h3>OUTPUT</h3>
+            <img src="Images/7.png" alt="code7">
+        </div>
+        <hr>
+
+    <!-- Using strncpy -->
+    <div class="strncpy">
+        <h2>Using strncpy</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+            #include &lt;string.h&gt;
+
+            int main() {
+                char src[] = "Dipson's World";
+                char dest[20];
+                strncpy(dest, src, 6);
+
+                printf("Destination: %s\n", dest);
+
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/8.png" alt="code8">
+    </div>
+    <hr>
+
+    <!-- Using Macros -->
+    <div class="macros">
+        <h2>Using macros</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+            #define PI 3.14159
+            #define SQUARE(x) ((x) * (x))
+
+            int main() {
+                double radius = 5.0;
+                double area = PI * SQUARE(radius);
+
+                printf("Area of circle with radius %.2f is: %.2f\n", radius, area);
+
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/9.png" alt="code9">
+    </div>
+    <hr>
+
+    <!-- Using File Inclusion -->
+    <div class="fileinclusion">
+        <h2>Using File Inclusion</h2>
+        <h3>CODE</h3>
+        <pre>
+            main.c
+            #include &lt;stdio.h&gt;
+            #include "my_header.h"
+
+            int main() {
+                greet();
+                return 0;
+            }
+
+            myheader.h
+            #ifndef MY_HEADER_H
+            #define MY_HEADER_H
+            #include &lt;stdio.h&gt;
+
+            void greet() {
+                printf("Hello from the header file!\n");
+            }
+
+            #endif
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/10.png" alt="code10">
+    </div>
+    <hr>
+
+    <!-- Conditional Compilation -->
+    <div class="conditionalcompilation">
+        <h2>Conditional Compilation</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+
+            #define DEBUG
+
+            int main() {
+                #ifdef DEBUG
+                    printf("Debugging is enabled.\n");
+                #else
+                    printf("Debugging is disabled.\n");
+                #endif
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/11.png" alt="code11">
+    </div>
+    <hr>
+
+    <!-- Other Preprocessor Directives -->
+    <div class="other-directives">
+        <h2>Other Preprocessor Directives</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+            #define PI 3.14159
+            #define AREA_CIRCLE(r) (PI * (r) * (r))
+            #define TEMP 100
+            #pragma message "Compiling the program..."
+            
+            int main() {
+                printf("Value of PI: %f\n", PI);
+                
+                float radius = 5.0;
+                printf("Area of circle with radius %.1f: %.2f\n", radius, AREA_CIRCLE(radius));
+                
+                printf("Value of TEMP: %d\n", TEMP);
+                
+                #undef TEMP
+                
+                // Line control directive
+                #line 100 "custom_file.c"
+                printf("This line appears to be from line %d in %s\n", __LINE__, __FILE__);
+                
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/12.png" alt="code12">
+    </div>
+    <hr>
+
+    <!-- Tokens: Keywords, Identifiers, Constants, etc. -->
+    <div class="tokens">
+        <h2>Different Types of Tokens</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+            #define MAX 100 // Preprocessor directive
+
+            int main() {  // keyword: int, identifier: main
+                int age = 25;           // Numeric constant: 25
+                float pi = 3.14159;     // Floating point constant: 3.14159
+                char grade = 'A';       // Character constant: 'A'
+                char name[] = "John";   // String constant: "John"
+                int sum = 10 + 5;       // Arithmetic operator: +
+                int isEqual = (10 == 5);// Relational operator: ==
+                int logicalAnd = (1 && 0); // Logical operator: &&
+                
+                // Special symbols
+                printf("Name: %s, Age: %d, Grade: %c\n", name, age, grade);
+                                        // Special symbols: {}, (), [], ;, ,
+                
+                return 0;               // keyword: return, constant: 0
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/13.png" alt="code13">
+    </div>
+    <hr>
+
+    <!-- printf() and scanf() -->
+    <div class="formatted-io">
+        <h2>Formatted I/O: printf() and scanf()</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+
+            int main() {
+                int age;
+                float height;
+                char name[50];
+                
+                // Using scanf() to get input
+                printf("Enter your name: ");
+                scanf("%s", name);
+                
+                printf("Enter your age: ");
+                scanf("%d", &age);
+                
+                printf("Enter your height (in meters): ");
+                scanf("%f", &height);
+                
+                // Using printf() with different format specifiers
+                printf("\n----- Personal Information -----\n");
+                printf("Name: %s\n", name);         // %s for string
+                printf("Age: %d years\n", age);     // %d for integer
+                printf("Height: %.2f meters\n", height); // %.2f for float with 2 decimal places
+                printf("Age in hex: %X\n", age);    // %X for hexadecimal
+                printf("Name with padding: %20s\n", name); // %20s for right-aligned string
+                
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/14.png" alt="code14">
+    </div>
+    <hr>
+
+    <!-- Unformatted I/O Functions -->
+    <div class="unformatted-io">
+        <h2>Unformatted I/O: getchar(), putchar(), gets(), puts()</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+
+            int main() {
+                char ch;
+                char str[100];
+                
+                // getchar() and putchar()
+                printf("Enter a character: ");
+                ch = getchar();
+                printf("You entered: ");
+                putchar(ch);
+                printf("\n");
+                
+                // Clear input buffer
+                while ((getchar()) != '\n');
+                
+                // gets() and puts()
+                printf("Enter a string: ");
+                gets(str);  // Note: gets() is unsafe and deprecated
+                
+                printf("You entered: ");
+                puts(str);  // puts() automatically adds a newline
+                
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/15.png" alt="code15">
+    </div>
+    <hr>
+
+    <!-- Switch Case and Goto -->
+    <div class="switchgoto">
+        <h2>Switch Case and Goto Label</h2>
+        <h3>CODE</h3>
+        <pre>
+            #include &lt;stdio.h&gt;
+
+            int main() {
+                int choice;
+
+                printf("Enter a number between 1 and 3: ");
+                scanf("%d", &choice);
+
+                switch(choice) {
+                    case 1:
+                        printf("You chose 1\n");
+                        break;
+                    case 2:
+                        printf("You chose 2\n");
+                        break;
+                    case 3:
+                        printf("You chose 3\n");
+                        break;
+                    default:
+                        printf("Invalid choice\n");
+                }
+
+                int num = 5;
+                if (num > 3) {
+                    goto label;
+                }
+
+                printf("This will be skipped.\n");
+
+                label:
+                    printf("Goto label reached.\n");
+
+                return 0;
+            }
+        </pre>
+        <h3>OUTPUT</h3>
+        <img src="Images/16.png" alt="code16">
+    </div>
+    <hr>
+
+    <!-- Different Patterns -->
+    <div class="patterns">
+        <h2>Different Patterns</h2>
+        
+        <h3>Square Pattern</h3>
+        <h4>CODE</h4>
+        <pre>
+            #include <stdio.h>
+
+            int main() {
+                int i, j;
+                for (i = 0; i < 5; i++) {
+                    for (j = 0; j < 5; j++) {
+                        printf("* ");
+                    }
+                    printf("\n");
+                }
+                return 0;
+            }
+        </pre>
+        <h4>OUTPUT</h4>
+        <img src="Images/17.png" alt="code17">
+    </div>
+    <hr>
+    
+    <!-- Rectangle Pattern -->
+    <div class="rectangle">
+        <h3>Rectangle Pattern</h3>
+        <h4>CODE</h4>
+        <pre>
+            #include &lt;stdio.h&gt;
+
+            int main() {
+                int rows = 4, cols = 6;
+                int i, j;
+                
+                for (i = 0; i < rows; i++) {
+                    for (j = 0; j < cols; j++) {
+                        printf("* ");
+                    }
+                    printf("\n");
+                }
+                return 0;
+            }
+        </pre>
+        <h4>OUTPUT</h4>
+        <img src="Images/18.png" alt="code18">
+    </div>
+    <hr>
+    
+    <!-- Right Pyramid Pattern -->
+    <div class="right-pyramid">
+        <h3>Right Pyramid Pattern</h3>
+        <h4>CODE</h4>
+        <pre>
+            #include &lt;stdio.h&gt;
+
+            int main() {
+                int rows = 5;
+                int i, j;
+                
+                for (i = 0; i < rows; i++) {
+                    for (j = 0; j <= i; j++) {
+                        printf("* ");
+                    }
+                    printf("\n");
+                }
+                return 0;
+            }
+        </pre>
+        <h4>OUTPUT</h4>
+        <img src="Images/19.png" alt="code19">
+    </div>
+    <hr>
+    
+    <!-- Inverse Right Pyramid Pattern -->
+    <div class="inverse-right-pyramid">
+        <h3>Inverse Right Pyramid Pattern</h3>
+        <h4>CODE</h4>
+        <pre>
+            #include &lt;stdio.h&gt;
+
+            int main() {
+                int rows = 5;
+                int i, j;
+                
+                for (i = rows; i > 0; i--) {
+                    for (j = 0; j < i; j++) {
+                        printf("* ");
+                    }
+                    printf("\n");
+                }
+                return 0;
+            }
+        </pre>
+        <h4>OUTPUT</h4>
+        <img src="Images/20.png" alt="code20">
+    </div>
+    <hr>
+    
+</body>
+
+</html>
